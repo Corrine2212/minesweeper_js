@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'minesweeper font';
+    src: url(/mine-sweeper/mine-sweeper.ttf) format('truetype')
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp10390713.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1, h2, h3 {
+    line-height: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.windows-container {
+    border: 5px solid;
+    border-color: #245edb #05158A #05158A #245edb;
+    border-radius: 10px 10px 3px 3px;
+    background-color: #2A55D2;
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
+}
+
+.windows-header {
+    /* margin: 0px 0px;    */
+}
+
+.game-container {
+    position: relative;
+    background-color: #bdbdbd;
+    padding: 7px;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #808080;
+    border-right: 3px solid #808080;
+}
+
+.header-container {
+    padding: 3px 5px;
+    border: 2px solid;
+    border-color: #7d7d7d #fff #fff #7d7d7d;
+    background-color: #bdbdbd;
+}
+
+.minesweeper-header-wrapper {
+    border-bottom: 7px solid #bdbdbd;
+}
+
+.grid {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bdbdbd;
+
+    border: 3px solid;
+    border-color: #7d7d7d #fff #fff #7d7d7d;
+}
+
+/* only styling divs within the grid class */
+.grid div {
+    height: 40px;
+    width: 40px;  
+    box-sizing: border-box; 
+    border: 1px solid;
+    border-color: #7d7d7d #fff #fff #7d7d7d;
+
+    font-size: 1.5625rem /* 25px -> 1.5625rem */;
+    text-align: center;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #808080;
+    border-right: 3px solid #808080;
+
+}
+
+.checked {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border: 2px solid;
+    background-color: #cecab7;
+    border-color: #9c998d;
+    box-sizing: border-box;
+}
+
+.bomb {
+    background-color: orange;
+}
+
+.one, .two, .three, .four, .five, .six {
+    font-family: 'minesweeper font';
+    font-size: 5px;
+}
+
+.one {
+    color: blue;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: red;
+}
+
+.four {
+    color: darkblue;
+}
+
+.five {
+    color: #7F1E1B;
+}
+
+.six {
+    color: #21787B;
+}
+
+.windows-taskbar {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #2A55D2;
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
+    overflow: hidden;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #449346;
+    background: linear-gradient(180deg, #1a3e1a 0%, #396d38 15%, #1e951f 87%, #1e771f 100%);
+    width: 100px;
+    height: 110%;
+    border-radius: 0 17px 17px 0;
+    border: 1px solid #1c631b;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.54);
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    font-style: italic;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.54),1px -1px 5px rgba(101, 98, 47, 0.52);
+    letter-spacing: .1em;    
+    
+}
+
+.start-button h2 {
+    margin-bottom: 15px;
+}
+
+.notification-center {
+    background-color: #13a4eb;
+    background: linear-gradient(180deg, #13a4eb 0%, #1290e9 5%, #129cee 94%, #129dee 100%);
+    border-left: 1px solid #0f4575;
+}
+.time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding: 0 15px;
+    color: white;
+
+}
+
+.logo {
+    width: 30px;
+    margin: 5px ;
+}
