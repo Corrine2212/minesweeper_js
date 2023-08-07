@@ -8,3 +8,4 @@
 - [ ] Add smiley face icon for resetting game
 - [ ] Clock/timer
 - [ ] Sound effects for when you hit a bomb
+- [ ] Add taskbar tab for minesweeper window
