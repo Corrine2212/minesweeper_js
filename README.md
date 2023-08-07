@@ -8,4 +8,3 @@
 - [ ] Add smiley face icon for resetting game
 - [ ] Clock/timer
 - [ ] Sound effects for when you hit a bomb
-- [ ] 
